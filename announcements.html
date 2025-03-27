@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements - Wells of Revival</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.jpeg">
+
+</head>
+<body>
+    <!-- Quick Announcements Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <p>Join us this Sunday for a special service at 9:00 AM</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+                <span>Wells of Revival</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="sermons.html">Sermons</a>
+            <a href="calendar.html">Calendar</a>
+            <a href="events.html">Events</a>
+            <a href="announcements.html" class="active">Announcements</a>
+            <a href="contact.html">Contact</a>
+            <a href="giving.html" class="donate-btn">Give</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Announcements Hero Section -->
+    <section class="announcements-hero">
+        <div class="announcements-hero-content">
+            <h1 class="fade-in">Church Announcements</h1>
+            <p class="subtitle fade-in">Stay updated with the latest news and information</p>
+        </div>
+    </section>
+
+    <!-- Announcements Filter Section -->
+    <section class="announcements-filter fade-on-scroll">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="announcement-category">Category:</label>
+                    <select id="announcement-category">
+                        <option value="all">All Categories</option>
+                        <option value="general">General</option>
+                        <option value="events">Events</option>
+                        <option value="ministry">Ministry</option>
+                        <option value="community">Community</option>
+                    </select>
+                </div>
+                
+                <div class="search-group">
+                    <input type="text" id="announcement-search" placeholder="Search announcements...">
+                    <button id="search-button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Announcement Section -->
+    <section class="featured-announcement fade-on-scroll">
+        <div class="container">
+            <div class="featured-announcement-card">
+                <div class="announcement-badge">Important</div>
+                <h2>Annual Revival Conference 2025</h2>
+                <div class="announcement-meta">
+                    <span><i class="fas fa-calendar-alt"></i> Posted on June 1, 2025</span>
+                    <span><i class="fas fa-tag"></i> Events</span>
+                </div>
+                <div class="announcement-content">
+                    <p>We are excited to announce our Family sunday Conference scheduled for April 5 <sup>th</sup>, 2025.[ Theme ]</p>
+            
+                    
+                    <!-- <div class="announcement-actions">
+                        <a href="#" class="announcement-btn">Register Now</a>
+                        <a href="#" class="announcement-btn secondary">Learn More</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcements Grid Section -->
+    <section class="announcements-grid fade-on-scroll">
+        <div class="container">
+            <h2>Recent Announcements</h2>
+            <div class="announcements-container">
+                <!-- Announcement Card 1 -->
+                <div class="announcement-card" data-category="ministry">
+                    <div class="announcement-header">
+                        <h3>[Title]</h3>
+                        <div class="announcement-meta">
+                            <span><i class="fas fa-calendar-alt"></i> [Date] </span>
+                            <span><i class="fas fa-tag"></i> Ministry</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <p>[Message]</p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Announcement Card 2 -->
+                <div class="announcement-card" data-category="community">
+                    <div class="announcement-header">
+                        <h3>[Title]</h3>
+                        <div class="announcement-meta">
+                            <span><i class="fas fa-calendar-alt"></i>[Date]</span>
+                            <span><i class="fas fa-tag"></i> Community</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <p>[Message]</p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Announcement Card 3 -->
+                <div class="announcement-card" data-category="general">
+                    <div class="announcement-header">
+                        <h3>[Title]</h3>
+                        <div class="announcement-meta">
+                            <span><i class="fas fa-calendar-alt"></i> [Date]</span>
+                            <span><i class="fas fa-tag"></i> General</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <p>[Message]</p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Announcement Card 4 -->
+                <div class="announcement-card" data-category="events">
+                    <div class="announcement-header">
+                        <h3>[Title]</h3>
+                        <div class="announcement-meta">
+                            <span><i class="fas fa-calendar-alt"></i> [Date]</span>
+                            <span><i class="fas fa-tag"></i> Events</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <p>[Message]</p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Announcement Card 5 -->
+                <div class="announcement-card" data-category="ministry">
+                    <div class="announcement-header">
+                        <h3>[Title]</h3>
+                        <div class="announcement-meta">
+                            <span><i class="fas fa-calendar-alt"></i>[Date]</span>
+                            <span><i class="fas fa-tag"></i> Ministry</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <p>[Message]</p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Announcement Card 6 -->
+                <div class="announcement-card" data-category="general">
+                    <div class="announcement-header">
+                        <h3>[Title]</h3>
+                        <div class="announcement-meta">
+                            <span><i class="fas fa-calendar-alt"></i> [Date]</span>
+                            <span><i class="fas fa-tag"></i> General</span>
+                        </div>
+                    </div>
+                    <div class="announcement-body">
+                        <p>[Message]</p>
+                    </div>
+                    <div class="announcement-footer">
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="pagination-btn active">1</a>
+                <a href="#" class="pagination-btn">2</a>
+                <a href="#" class="pagination-btn">3</a>
+                <a href="#" class="pagination-btn next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe to Announcements Section -->
+    <section class="subscribe-announcements fade-on-scroll">
+        <div class="container">
+            <div class="subscribe-content">
+                <div class="subscribe-text">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to receive our announcements directly to your email inbox. Never miss important church news and updates!</p>
+                </div>
+                <div class="subscribe-form">
+                    <form id="announcement-subscribe-form">
+                        <div class="form-group">
+                            <input type="text" id="subscribe-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="subscribe-email" placeholder="Your Email" required>
+                        </div>
+                        <button type="submit" class="subscribe-btn">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Bulletin Section -->
+    <section class="weekly-bulletin fade-on-scroll">
+        <div class="container">
+            <div class="bulletin-content">
+                <div class="bulletin-image">
+                    <img src="images/bulletin.jpg" alt="Church Bulletin">
+                </div>
+                <div class="bulletin-text">
+                    <h2>Weekly Bulletin</h2>
+                    <p>Our weekly bulletin contains detailed information about upcoming events, prayer requests, sermon notes, and more.</p>
+                    <p>You can pick up a physical copy at church on Sundays or download the digital version below.</p>
+                    <a href="#" class="bulletin-btn"><i class="fas fa-download"></i> Download Latest Bulletin</a>
+                    <a href="#" class="bulletin-archive-link">View Bulletin Archive <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.jpeg" alt="Wells of Revival Logo">
+                <h3>Wells of Revival</h3>
+                <p>Transforming Lives Through Christ</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="sermons.html">Sermons</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+                <a href="giving.html">Give</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Majengo, Thika, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 XXX XXX XXX</p>
+                <p><i class="fas fa-envelope"></i> info@wellsofrevival.org</p>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Wells of Revival. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/announcements.js"></script>
+    <script src="js/announce.js"></script>
+</body>
+</html>
